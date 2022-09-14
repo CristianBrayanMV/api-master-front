@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login">
+        <img src="./img/bg.svg" alt="" class="login__img">
+        <h1 class="login__title">API - MASTER </h1>
+        <h4 class="login__subtitle">BIENVENIDO</h4>
+        <form action="" class="login__form">
+            <div class="login__lbl">
+                <input type="text" name="usuario" class="login__input ">
+                <i class="login__ico fa-regular fa-circle-user"></i>
+                <label for="" class="login__field ">Usuario</label>               
+            </div>
+            <div class="login__lbl" >
+                <input type="password" name="password" class="login__input">
+                <i class=" login__ico fa-solid fa-lock"></i>
+                <label for="" class="login__field">Contraseña</label>
+            </div>           
+            <div class="login__remember">  
+                <input type="checkbox" name="" id="remenber" >
+                <label for="remenber">Recordarme</label>
+            </div>         
+            <button class="login__btn" type="submit"> 
+                <i class="fa-solid fa-arrow-right-to-bracket"></i> Ingresar
+            </button>
+        </form>        
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

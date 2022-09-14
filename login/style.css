@@ -1,0 +1,117 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  background: linear-gradient(#2664AB, #16094e);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+.login{
+/*   border:1px solid red; */  
+  background:white; 
+  width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 15px 25px black; 
+
+  
+}
+
+.login__img{
+  width: 100%;
+  transform: rotate(180deg);
+}
+.login__title{
+  margin-bottom: 1px;
+
+}
+.login__title, .login__subtitle{
+  text-align: center;
+  margin-top: 0;
+  color:rgb(73, 73, 73);
+  
+}
+
+.login__form{
+  padding-bottom:25px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.login__lbl{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 25px;
+}
+.login__input{
+  padding: 15px 40px;
+  outline: none;
+  border-radius: 10px;
+  border:1px solid silver; 
+  color:rgb(107, 107, 107); 
+  font-size: 15px;
+}
+
+
+.login__field, .login__ico{
+  position: absolute;
+  font-size: 18px;
+  color:#2664AB;
+  top:14px;
+}
+.login__field{
+  left:40px;
+  transition: .4s top ;
+  transition-timing-function: ease;
+}
+.login__input:focus ~ .login__field{
+  top:-8px;
+  font-size: 15px;
+  background-color: white;
+}
+.login__field-validate{
+  top:-8px;
+  font-size: 15px;
+  background-color: white;
+}
+.login__ico{
+  left:10px;
+  
+}
+.login__remember{
+  color:gray;
+  margin-bottom: 15px;
+}
+.login__btn{
+  background-color: #2664AB;
+  outline: none;
+  padding: 9px 15px;
+  border: 0;
+  color:white;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.login__btn:hover{
+  background-color: #1e5492;
+}
+.login__input--invalidate{
+  border:1px solid red;
+}
+
+.login__input--invalidate ~ *{
+  color:red;
+}
+.login__invalidate{  
+  flex: 1;
+  text-align: center;
+  font-size: 12px;
+}
+
